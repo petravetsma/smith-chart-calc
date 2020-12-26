@@ -1,9 +1,9 @@
-function susceptance(re, im, resistance) {  // Реактивная полная проводимость
+function susceptance(re, im, resistance) {  // Реактивная проводимость
   return ( -2 * im ) / ( (1 + re) ** 2 + im ** 2) / resistance ;
 }
 
-function conductance(re, im, resistance) {  // Активная полная проводимость
-  return (1 - re ** 2 - im ** 2) / ( (1 + re ) ** 2 + im ** 2 ) / resistance ;
+function conductance(re, im, resistance) {  // Активная проводимость
+  return (1 - re ** 2 - im ** 2) / ( (1 + re ) ** 2 + im ** 2 ) * resistance ;
 }
 
 let rRem = document.getElementById('r-rem');
