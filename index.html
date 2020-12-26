@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Реактивная составляющая полной проводимости</h2>
+  <form action="#">
+    <label for="r-rem">
+      Rem
+      <input required type="text" name="r-rem" id="r-rem">
+    </label>
+    <label for="r-im">
+      Im
+      <input required type="text" name="r-im" id="r-im">
+    </label>
+    <label for="r-r">Сопротивление
+      <input required type="text" name="r-r" id="r-r">
+    </label>
+    <button class="r-btn" onclick="showSusceptance();">Calculate</button>
+  </form>
+
+  <h2>Активная составляющая полной проводимости</h2>
+  <label for="a-rem">
+    Rem
+    <input required type="text" name="a-rem" id="a-rem">
+  </label>
+  <label for="a-im">
+    Im
+    <input required type="text" name="a-im" id="a-im">
+  </label>
+  <label for="a-r">
+    Сопротивление
+    <input required type="text" name="a-r" id="a-r">
+  </label>
+  <button class="a-btn" onclick="showConductance();">Calculate</button>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
