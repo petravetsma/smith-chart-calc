@@ -1,4 +1,4 @@
 # smith-chart-calc
 conductance / suspectance calc
 
-stengof.github.io/smith-chart-calc
+https://stengof.github.io/smith-chart-calc
