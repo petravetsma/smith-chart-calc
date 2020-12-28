@@ -8,22 +8,30 @@
 </head>
 
 <body>
+  <style>
+    label {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
   <img src="diag.png" alt="smith diagramm" width="320" height="320">
   <h2>Реактивная составляющая полной проводимости</h2>
-  <form action="#">
-    <label for="r-rem">
-      Rem
-      <input required type="text" name="r-rem" id="r-rem">
-    </label>
-    <label for="r-im">
-      Im
-      <input required type="text" name="r-im" id="r-im">
-    </label>
-    <label for="r-r">Сопротивление
-      <input required type="text" name="r-r" id="r-r">
-    </label>
-    <button class="r-btn" onclick="showSusceptance();">Calculate</button>
-  </form>
+  <label for="r-rem">
+    Rem
+    <input required type="text" name="r-rem" id="r-rem">
+  </label>
+  <label for="r-im">
+    Im
+    <input required type="text" name="r-im" id="r-im">
+  </label>
+  <label for="r-r">Сопротивление
+    <input required type="text" name="r-r" id="r-r">
+  </label>
+  <label for="r-check">
+    Reverse
+    <input type="checkbox" name="r-check" id="r-check">
+  </label>
+  <button class="r-btn" onclick="showSusceptance();">Calculate</button>
 
   <h2>Активная составляющая полной проводимости</h2>
   <label for="a-rem">
@@ -37,6 +45,10 @@
   <label for="a-r">
     Сопротивление
     <input required type="text" name="a-r" id="a-r">
+  </label>
+  <label for="a-check">
+    Reverse
+    <input type="checkbox" name="a-check" id="a-check">
   </label>
   <button class="a-btn" onclick="showConductance();">Calculate</button>
 
