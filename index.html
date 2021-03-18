@@ -5,53 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-
-<body>
   <style>
     label {
       display: block;
       margin: 10px auto;
     }
+    .body-wrap {
+      max-width: 600px;
+      margin: 0 auto;
+    }
   </style>
-  <img src="diag.png" alt="smith diagramm" width="320" height="320">
-  <h2>Реактивная составляющая полной проводимости</h2>
-  <label for="r-rem">
-    Rem
-    <input required type="text" name="r-rem" id="r-rem">
-  </label>
-  <label for="r-im">
-    Im
-    <input required type="text" name="r-im" id="r-im">
-  </label>
-  <label for="r-r">Сопротивление
-    <input required type="text" name="r-r" id="r-r">
-  </label>
-  <label for="r-check">
-    Reverse
-    <input type="checkbox" name="r-check" id="r-check">
-  </label>
-  <button class="r-btn" onclick="showSusceptance();">Calculate</button>
+</head>
 
-  <h2>Активная составляющая полной проводимости</h2>
-  <label for="a-rem">
-    Rem
-    <input required type="text" name="a-rem" id="a-rem">
-  </label>
-  <label for="a-im">
-    Im
-    <input required type="text" name="a-im" id="a-im">
-  </label>
-  <label for="a-r">
-    Сопротивление
-    <input required type="text" name="a-r" id="a-r">
-  </label>
-  <label for="a-check">
-    Reverse
-    <input type="checkbox" name="a-check" id="a-check">
-  </label>
-  <button class="a-btn" onclick="showConductance();">Calculate</button>
+<body>
+  <main class="body-wrap">
+    <img src="diag.png" alt="smith diagramm" width="320" height="320">
+    <h2>Реактивная составляющая полной проводимости</h2>
+    <label for="r-rem">
+      Rem
+      <input required type="text" name="r-rem" id="r-rem">
+    </label>
+    <label for="r-im">
+      Im
+      <input required type="text" name="r-im" id="r-im">
+    </label>
+    <label for="r-r">Сопротивление
+      <input required type="text" name="r-r" id="r-r">
+    </label>
+    <label for="r-check">
+      Reverse
+      <input type="checkbox" name="r-check" id="r-check">
+    </label>
+    <button class="r-btn" onclick="showSusceptance();">Calculate</button>
 
+    <h2>Активная составляющая полной проводимости</h2>
+    <label for="a-rem">
+      Rem
+      <input required type="text" name="a-rem" id="a-rem">
+    </label>
+    <label for="a-im">
+      Im
+      <input required type="text" name="a-im" id="a-im">
+    </label>
+    <label for="a-r">
+      Сопротивление
+      <input required type="text" name="a-r" id="a-r">
+    </label>
+    <label for="a-check">
+      Reverse
+      <input type="checkbox" name="a-check" id="a-check">
+    </label>
+    <button class="a-btn" onclick="showConductance();">Calculate</button>
+    </main>
   <script src='script.js'></script>
 </body>
 
